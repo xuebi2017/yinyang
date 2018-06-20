@@ -1,0 +1,25 @@
+$d: 80vmin;
+body {
+    background-color: #dedede;
+    .container {
+        display: flex;
+        align-items: center;
+        width: $d;
+        height: $d;
+        border-radius: 50%;
+        // background: linear-gradient(black 50%, white 0);
+        background: linear-gradient(to bottom, #000000 0%,#000000 50%,#ffffff 50%,#ffffff 100%);
+    &::before, &::after{
+            content: '';
+            flex: 1;
+            height: $d/6;
+            border-radius: 50%;
+            background-color: black;
+            border: $d/6 solid white;
+        }
+    &::after{
+        background-color: white;
+        border-color: black;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+body {
+  background-color: #dedede; }
+  body .container {
+    display: flex;
+    align-items: center;
+    width: 80vmin;
+    height: 80vmin;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #000000 0%, #000000 50%, #ffffff 50%, #ffffff 100%); }
+    body .container::before, body .container::after {
+      content: '';
+      flex: 1;
+      height: 13.3333333333vmin;
+      border-radius: 50%;
+      background-color: black;
+      border: 13.3333333333vmin solid white; }
+    body .container::after {
+      background-color: white;
+      border-color: black; }
+
+/*# sourceMappingURL=style.css.map */
